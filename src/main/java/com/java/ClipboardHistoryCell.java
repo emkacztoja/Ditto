@@ -17,7 +17,7 @@ public class ClipboardHistoryCell extends ListCell<ClipboardItem> {
     public ClipboardHistoryCell(ClipboardManager manager) {
         this.clipboardManager = manager;
 
-        // Apply CSS classes for styling
+        // Apply CSS
         contentText.getStyleClass().add("cell-content");
         timestampText.getStyleClass().add("cell-timestamp");
 

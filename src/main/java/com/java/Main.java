@@ -36,7 +36,7 @@ public class Main extends Application {
     private SettingsManager settingsManager;
 
     public static void main(String[] args) {
-        // Fix for GDK warning on Linux
+        // GDK warning on Linux fix
         System.setProperty("jdk.gtk.version", "2");
         launch(args);
     }
@@ -103,7 +103,7 @@ public class Main extends Application {
 
         scene = new Scene(root, 400, 600);
         
-        // Load CSS and Apply Theme
+        // Load/Apply CSS
         URL cssUrl = getClass().getResource("/styles.css");
         if (cssUrl != null) {
             scene.getStylesheets().add(cssUrl.toExternalForm());
@@ -118,7 +118,7 @@ public class Main extends Application {
 
         primaryStage.setOnCloseRequest(event -> stage.hide());
         
-        // Show the stage, which will trigger the showingProperty listener
+        // Show the stage
         primaryStage.show();
     }
     
@@ -136,7 +136,7 @@ public class Main extends Application {
         SettingsDialog dialog = new SettingsDialog(stage, settingsManager);
         dialog.showAndWait();
         stage.setAlwaysOnTop(settingsManager.isAlwaysOnTop());
-        applyTheme(); // Re-apply theme in case it changed
+        applyTheme();
     }
 
     private void createTrayIcon(final Stage stage) {
