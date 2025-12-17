@@ -1,0 +1,125 @@
+/* General App Styling - Light Theme (Default) */
+.root {
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 14px;
+    -fx-background-color: #f4f4f4;
+    -fx-text-fill: #333;
+}
+
+/* Dark Theme Styling */
+.dark-theme {
+    -fx-background-color: #2b2b2b;
+    -fx-text-fill: #e0e0e0;
+}
+
+.dark-theme .label, .dark-theme .text {
+    -fx-fill: #e0e0e0;
+}
+
+/* Buttons */
+.button {
+    -fx-background-color: #0078d7;
+    -fx-text-fill: white;
+    -fx-background-radius: 4;
+    -fx-padding: 6 12 6 12;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: #005a9e;
+}
+
+.button:pressed {
+    -fx-background-color: #004578;
+}
+
+/* Text Fields */
+.text-field {
+    -fx-background-radius: 4;
+    -fx-border-color: #ccc;
+    -fx-border-radius: 4;
+    -fx-padding: 6;
+    -fx-background-color: white;
+    -fx-text-fill: black;
+}
+
+.text-field:focused {
+    -fx-border-color: #0078d7;
+}
+
+.dark-theme .text-field {
+    -fx-background-color: #3c3f41;
+    -fx-text-fill: #e0e0e0;
+    -fx-border-color: #555;
+}
+
+/* ListView */
+.list-view {
+    -fx-background-color: transparent;
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+    -fx-border-color: #ddd;
+    -fx-border-radius: 4;
+}
+
+.dark-theme .list-view {
+    -fx-border-color: #444;
+}
+
+.list-cell {
+    -fx-padding: 10;
+    -fx-background-color: white;
+    -fx-border-color: transparent transparent #eee transparent;
+    -fx-background-insets: 0;
+}
+
+.dark-theme .list-cell {
+    -fx-background-color: #3c3f41;
+    -fx-border-color: transparent transparent #555 transparent;
+}
+
+.list-cell:filled:selected, .list-cell:filled:selected:hover {
+    -fx-background-color: #e1dfdd;
+    -fx-text-fill: black;
+}
+
+.dark-theme .list-cell:filled:selected, .dark-theme .list-cell:filled:selected:hover {
+    -fx-background-color: #4c5052;
+    -fx-text-fill: white;
+}
+
+.list-cell:filled:hover {
+    -fx-background-color: #f3f2f1;
+}
+
+.dark-theme .list-cell:filled:hover {
+    -fx-background-color: #45494a;
+}
+
+.list-cell:empty {
+    -fx-background-color: white;
+    -fx-border-color: transparent;
+}
+
+.dark-theme .list-cell:empty {
+    -fx-background-color: #3c3f41;
+}
+
+/* Custom Cell Content */
+.cell-content {
+    -fx-font-weight: bold;
+    -fx-fill: #333;
+}
+
+.dark-theme .cell-content {
+    -fx-fill: #e0e0e0;
+}
+
+.cell-timestamp {
+    -fx-font-size: 11px;
+    -fx-fill: #666;
+}
+
+.dark-theme .cell-timestamp {
+    -fx-fill: #aaa;
+}
